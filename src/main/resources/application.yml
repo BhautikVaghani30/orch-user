@@ -1,0 +1,10 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, metrics
+  endpoint:
+    health:
+      show-details: always # Shows status of individual components
+      probes:
+        enabled: true # Enables Kubernetes Liveness and Readiness probes
